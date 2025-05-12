@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Locomotive Scroll CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css"
+    />
+
+    <!-- Locomotive Scroll JS -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+
+    <!-- CDN 추가 -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./favicon//apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- js -->
+    <script src="./js/script.js" defer></script>
+
+    <title>ARKET</title>
+  </head>
+  <body>
+    <header class="header_area">
+      <div class="container">
+        <div class="logo">
+          <a href="#none" class="header_logo">
+            <svg
+              id="Lager_1"
+              data-name="Lager 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 317.51 70"
+            >
+              <title>ARKET</title>
+              <g id="Page-1">
+                <path
+                  id="ARKET"
+                  d="M117.14,55.2c-.1-6.7-.3-14.6-9.4-17.3,7.9-1.5,13.4-6.9,13.4-17.3,0-13.4-9.8-20.6-24.4-20.6H71.14V70H80V41.6h24.2c4.8,4.1,3.8,8.5,3.8,14.2,0,4.1.5,10.1,3.9,14.2h9.9c-3.5-4-4.6-9.7-4.7-14.8ZM80.21,33.6V8.1h16.7c10.3,0,15.3,4.4,15.3,12.4s-5,13.1-15.3,13.1ZM54.5,70h9.1L38.4,0H25.2L0,70H9.1l6.5-18.1H48Zm-36-26.1L31.8,6.8,45.1,43.9ZM166.81,24.2,190.31,0h-12l-35.6,36.6V0h-8.9V70h8.9V49l17.5-18,7.7,19.4c2.5,6.2,5.6,15,9.1,19.6h9.9c-4-5.5-7.4-13.1-10.2-20.3ZM249.71,8V0H201V70h48.7V62h-39.8V38h36V30h-36V8Zm67.8-8h-58.7V8h24.9V70h8.9V8h24.9Z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="menu_btn">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu">
+      <div class="container">
+        <div class="menu_area">
+          <div class="logo">
+            <a href="#none">
+              <svg
+                id="Lager_1"
+                data-name="Lager 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 317.51 70"
+              >
+                <title>ARKET</title>
+                <g id="Page-1">
+                  <path
+                    id="ARKET"
+                    d="M117.14,55.2c-.1-6.7-.3-14.6-9.4-17.3,7.9-1.5,13.4-6.9,13.4-17.3,0-13.4-9.8-20.6-24.4-20.6H71.14V70H80V41.6h24.2c4.8,4.1,3.8,8.5,3.8,14.2,0,4.1.5,10.1,3.9,14.2h9.9c-3.5-4-4.6-9.7-4.7-14.8ZM80.21,33.6V8.1h16.7c10.3,0,15.3,4.4,15.3,12.4s-5,13.1-15.3,13.1ZM54.5,70h9.1L38.4,0H25.2L0,70H9.1l6.5-18.1H48Zm-36-26.1L31.8,6.8,45.1,43.9ZM166.81,24.2,190.31,0h-12l-35.6,36.6V0h-8.9V70h8.9V49l17.5-18,7.7,19.4c2.5,6.2,5.6,15,9.1,19.6h9.9c-4-5.5-7.4-13.1-10.2-20.3ZM249.71,8V0H201V70h48.7V62h-39.8V38h36V30h-36V8Zm67.8-8h-58.7V8h24.9V70h8.9V8h24.9Z"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+
+          <div class="menus">
+            <div class="sub_menus">
+              <ul class="account_links">
+                <li><a href="#">Login / Register</a></li>
+                <li><a href="#">My Account</a></li>
+              </ul>
+              <ul class="info_links">
+                <li><a href="#">Arket Detail</a></li>
+                <li><a href="#">Editorial</a></li>
+                <li><a href="#">Cafe</a></li>
+                <li><a href="#">Customer Service</a></li>
+              </ul>
+              <ul class="sns_links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Kakaotalk</a></li>
+                <li><a href="#">Pinterest</a></li>
+              </ul>
+            </div>
+
+            <ul class="main_menu">
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">Homewear</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="search_box">
+          <input type="text" placeholder="Type Here To Search" />
+          <button>Search</button>
+        </div>
+        <button class="close_btn"><span></span><span></span></button>
+      </div>
+    </div>
+
+    <div data-scroll-container>
+      <div class="wrap_container" data-scroll data-scroll-speed="0">
+        <div class="wrap">
+          <section class="banner">
+            <div class="container">
+              <div class="banner-img_wrap">
+                <div class="banner-img_box">
+                  <img src="./image/230113_S10_202.jpg" alt="" />
+                </div>
+
+                <div class="main_text">
+                  <p class="firstline">Timeless silhouettes,</p>
+                  <p class="secondline">softened by nature</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="collection">
+            <div class="container">
+              <div class="title">Early Spring Layers</div>
+
+              <div class="col">
+                <div class="sec">
+                  <a href="#none" class="women_col"
+                    ><img
+                      src="./image/hnmmain2696790020250408150253.jpg"
+                      alt="" />
+                    <div class="overlay"></div
+                  ></a>
+                  <div class="text">women</div>
+                </div>
+                <div class="sec">
+                  <a href="#none" class="men_col">
+                    <img
+                      src="./image/hnmmain2699601020250415154625.jpg"
+                      alt=""
+                    />
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text">men</div>
+                </div>
+                <div class="sec">
+                  <a href="#none" class="kids_col">
+                    <img
+                      src="./image/hnmmain2699600020250415154638.jpg"
+                      alt=""
+                    />
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text">kids</div>
+                </div>
+                <div class="sec">
+                  <a href="#none" class="homewear_col">
+                    <img
+                      src="./image/hnmmain2699601020250415154648.jpg"
+                      alt=""
+                    />
+                    <div class="overlay"></div>
+                  </a>
+                  <div class="text">homewear</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="campaign">
+            <div class="container">
+              <div class="text">
+                TIMELESS DESIGN<br />
+                INSPIRED BY NATURE AND MODERN LIVING.<br />
+                ESSENTIALS FOR A QUIET, REFINED WARDROBE.<br />
+                SPRING 2025 EDITION BY ARKET.
+              </div>
+              <div class="arket_campaign1">
+                <img
+                  src="./image/220621_1761_MS_1UQF_ARKET_unisex_V1-CAMPAIGN_APP.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="arket_campaign2">
+                <div class="parallax-img-wrapper">
+                  <img
+                    src="./image/Arket-Tove-Jansson-1-1280x670.jpg"
+                    alt=""
+                    data-scroll
+                    data-scroll-speed="-1.5"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="about">
+            <div class="container">
+              <p class="maintext">
+                Arket<br />
+                Take a look inside.
+              </p>
+
+              <div class="thumbnail">
+                <div class="thumb">
+                  <a href="#none"
+                    ><img src="./image/about/filters_quality(80).jpg" alt=""
+                  /></a>
+                  <div class="overlay"></div>
+                  <a href="#none" class="subtext">
+                    A more beautiful<br />
+                    everyday life
+                  </a>
+                </div>
+                <div class="thumb">
+                  <a href="#none"
+                    ><img src="./image/about/design.jpg" alt=""
+                  /></a>
+                  <div class="overlay"></div>
+                  <a href="#none" class="subtext">
+                    Design that lasts<br />
+                    a long time
+                  </a>
+                </div>
+                <div class="thumb">
+                  <a href="#none"
+                    ><img
+                      src="./image/about/filters_quality(80)-(2).jpg"
+                      alt=""
+                  /></a>
+                  <div class="overlay"></div>
+                  <a href="#none" class="subtext">Our space</a>
+                </div>
+                <div class="thumb">
+                  <a href="#none"
+                    ><img
+                      src="./image/about/filters_quality(80)-(3).jpg"
+                      alt=""
+                  /></a>
+                  <div class="overlay"></div>
+                  <a href="#none" class="subtext">Arket cafe</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="newsletter">
+            <div class="container">
+              <div class="textwrap">
+                <p class="newsletter_text">
+                  Never miss out—sign up for newsletters from arket
+                </p>
+              </div>
+
+              <div class="search">
+                <input type="search" placeholder="Email address" />
+                <button type="submit">submit</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="essentials">
+            <div class="mainbg">
+              <p class="subtext">What stays when the season fades?</p>
+              <p class="maintext FlexibleTitle">THE ESSENTIALS EDIT</p>
+            </div>
+          </section>
+
+          <section class="editorial">
+            <div class="container">
+              <div class="title">
+                <div class="text">arket editorial</div>
+                <a href="#none" class="next">view more</a>
+              </div>
+
+              <div class="edit">
+                <div class="editimg">
+                  <div class="img_wrap">
+                    <a href="#none"
+                      ><img src="./image/editorial/olivialonsdale.jpg" alt=""
+                    /></a>
+                    <div class="overlay"></div>
+                  </div>
+
+                  <div class="edit_text">
+                    <p class="subtext">people</p>
+                    <p class="maintext">Olivia Lonsdale</p>
+                  </div>
+                </div>
+
+                <div class="editimg">
+                  <div class="img_wrap">
+                    <a href="#none"
+                      ><img src="./image/editorial/wavro.jpg" alt=""
+                    /></a>
+                    <div class="overlay"></div>
+                  </div>
+
+                  <div class="edit_text">
+                    <p class="subtext">food</p>
+                    <p class="maintext">Warbro kvarn</p>
+                  </div>
+                </div>
+
+                <div class="editimg">
+                  <div class="img_wrap">
+                    <a href="#none"
+                      ><img src="./image/editorial/redown.jpg" alt=""
+                    /></a>
+                    <div class="overlay"></div>
+                  </div>
+
+                  <div class="edit_text">
+                    <p class="subtext">Suppliers</p>
+                    <p class="maintext">Re:down</p>
+                  </div>
+                </div>
+
+                <div class="editimg">
+                  <div class="img_wrap">
+                    <a href="#none"
+                      ><img src="./image/editorial/botineli.jpg" alt=""
+                    /></a>
+                    <div class="overlay"></div>
+                  </div>
+
+                  <div class="edit_text">
+                    <p class="subtext">Suppliers</p>
+                    <p class="maintext">BOTTINELLI</p>
+                  </div>
+                </div>
+
+                <div class="editimg">
+                  <div class="img_wrap">
+                    <a href="#none"
+                      ><img src="./image/editorial/limonta.jpg" alt=""
+                    /></a>
+                    <div class="overlay"></div>
+                  </div>
+
+                  <div class="edit_text">
+                    <p class="subtext">Suppliers</p>
+                    <p class="maintext">LIMONTA</p>
+                  </div>
+                </div>
+
+                <div class="editimg">
+                  <div class="img_wrap">
+                    <a href="#none"
+                      ><img src="./image/editorial/hatisoup.jpg" alt=""
+                    /></a>
+                    <div class="overlay"></div>
+                  </div>
+
+                  <div class="edit_text">
+                    <p class="subtext">food</p>
+                    <p class="maintext">hearty soup</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bottomimg">
+              <!-- <img src="./image/4eb839a80e272db5261f541ba73a7f17.jpg" alt="" /> -->
+            </div>
+          </section>
+
+          <section class="designer">
+            <div class="container">
+              <div class="content">
+                <div class="text">
+                  <div class="maintext">
+                    AT WORK WITH:<br />
+                    DESIGN TEAM STOCKHOLM<br />
+                    Responsibility for our influence<br />
+                  </div>
+                  <div class="nametext">Sophia Snoborg, Production Manager</div>
+                </div>
+                <div class="designerimg">
+                  <img src="./image/interview/2.jpg" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="cafe">
+            <div class="container">
+              <div class="title">
+                <p class="text">arket cafe</p>
+                <a href="#none" class="next">view more</a>
+              </div>
+
+              <div class="content">
+                <div class="cafeimg image">
+                  <a href="#none"
+                    ><img src="./image/cafe/Martin Berg.jpg" alt=""
+                  /></a>
+                  <div class="overlay"></div>
+
+                  <div class="cafe_text text1">
+                    <p class="subtext">cheff</p>
+                    <p class="maintext">martin berg</p>
+                  </div>
+                </div>
+
+                <div class="cafeimg image">
+                  <a href="#none"><img src="./image/cafe/TK2.jpg" alt="" /></a>
+
+                  <div class="cafe_text">
+                    <p class="subtext">Merchandise</p>
+                    <p class="maintext">collaboration with olga prader</p>
+                  </div>
+                </div>
+
+                <div class="cafeimg image">
+                  <a href="#none"><img src="./image/cafe/TK1.jpg" alt="" /></a>
+
+                  <div class="cafe_text">
+                    <p class="subtext">food</p>
+                    <p class="maintext">Warbro kvarn</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="recipe">
+            <div class="container">
+              <div class="title">
+                <p class="text">arket recipe</p>
+                <div class="next">view more</div>
+              </div>
+
+              <div class="recipe_item">
+                <div class="recipe_image">
+                  <a href="#none">
+                    <img
+                      src="./image/cafe/arket_cafe_234_RECIPE_BEETROOTSANDKALE_01.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="overlay"></div>
+                </div>
+                <div class="recipe_content">
+                  <h2>Roasted Beetroots<br />With Kale<br />And Parmesan</h2>
+                  <span class="recipe_number">Recipe 1</span>
+                </div>
+              </div>
+
+              <div class="recipe_item">
+                <div class="recipe_image">
+                  <a href="#none">
+                    <img
+                      src="./image/cafe/arket_cafe_234_RECIPE_SWEETPOTATOESAPPLESALSA_02.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="overlay"></div>
+                </div>
+                <div class="recipe_content">
+                  <h2>Baked Sweet Potatoes<br />With Apple Salsa</h2>
+                  <span class="recipe_number">Recipe 2</span>
+                </div>
+              </div>
+
+              <div class="recipe_item item3">
+                <div class="recipe_image">
+                  <a href="#none">
+                    <img
+                      src="./image/cafe/ARKET_23CAFE_RECIPE_ROASTEDAUBERGINEANDHERITAGETOMATOES_HERO.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div class="overlay"></div>
+                </div>
+                <div class="recipe_content">
+                  <h2>Roasted Aubergines<br />And Heritage<br />Tomatoes</h2>
+                  <span class="recipe_number">Recipe 3</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <footer class="footer_area">
+            <div class="container">
+              <div class="footer_text">
+                <div class="copyright">© arket 2025</div>
+
+                <div class="sns">
+                  <a href="#none" class="facebook">facebook</a>
+                  <a href="#none" class="instagram">instagram</a>
+                  <a href="#none" class="kakaotalk">kakaotalk</a>
+                  <a href="#none" class="pinterest">pinterest</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <button class="scroll_top_btn">TOP</button>
+  </body>
+</html>
