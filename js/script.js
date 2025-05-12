@@ -58,17 +58,48 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
   scroll.on("scroll", ScrollTrigger.update);
 
-  ScrollTrigger.create({
-    trigger: ".FlexibleTitle",
-    scroller: "[data-scroll-container]", // Locomotive Scroll 쓰니까
+  // 반응형 스크롤트리거 핀 처리
+  ScrollTrigger.matchMedia({
+    // 데스크탑 (771px 이상)
+    "(min-width: 771px)": function () {
+      ScrollTrigger.create({
+        trigger: ".FlexibleTitle",
+        scroller: "[data-scroll-container]",
+        start: "top 70%",
+        end: "bottom+=10 top",
+        pin: true,
+        pinSpacing: false,
+        scrub: true,
+        // markers: true,
+      });
+    },
 
-    start: "top 70%", // 요소의 상단이 화면의 70% 지점에 닿으면 시작
-    end: "bottom+=10 top", // 요소의 하단이 화면의 맨 위에 닿으면 끝 (bottom+=200 으로 하단에서부터 위치조절하시면돼요 은지씨!)
-    pin: true,
-    pinSpacing: false,
-    scrub: true,
-    // markers: true, // 미커
+    // 모바일 (770px 이하)
+    "(max-width: 770px)": function () {
+      ScrollTrigger.create({
+        trigger: ".essentials .mainbg", // 이미지 섹션을 기준
+        scroller: "[data-scroll-container]",
+        start: "bottom+=50 top", // 이미지 아래 50px부터
+        end: "+=300", // 고정 유지 거리 (조절 가능)
+        pin: ".essentials .maintext", // 직접 고정할 대상
+        pinSpacing: false,
+        scrub: true,
+        // markers: true,
+      });
+    },
   });
+
+  // ScrollTrigger.create({
+  //   trigger: ".FlexibleTitle",
+  //   scroller: "[data-scroll-container]", // Locomotive Scroll 쓰니까
+
+  //   start: "top 70%", // 요소의 상단이 화면의 70% 지점에 닿으면 시작
+  //   end: "bottom+=10 top", // 요소의 하단이 화면의 맨 위에 닿으면 끝 (bottom+=200 으로 하단에서부터 위치조절하시면돼요 은지씨!)
+  //   pin: true,
+  //   pinSpacing: false,
+  //   scrub: true,
+  //   // markers: true, // 미커
+  // });
 
   // -----------------------------------------------
   // 메뉴 버튼을 누르면 메뉴 페이지가 나오게

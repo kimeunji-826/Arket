@@ -1569,8 +1569,21 @@ body.no-scroll {
     font-size: 1.05rem;
   }
 
+  .essentials .mainbg {
+    height: 560px;
+  }
+
+  .essentials .subtext {
+    top: 10%;
+  }
+
   .essentials .maintext {
-    top: 350px;
+    /* top: 350px; */
+    position: relative;
+    bottom: 40%;
+
+    margin-top: 50px;
+
     font-size: 5.15rem;
   }
 
@@ -1746,8 +1759,30 @@ body.no-scroll {
     height: 8px;
   }
 
-  .banner .main_text {
+  .menu .menu_area {
+    gap: 40px;
+  }
+
+  .menu .logo {
+    width: 120px;
+  }
+
+  .menu .main_menu a {
     font-size: 2rem;
+  }
+
+  .menu .sub_menus li a {
+    font-size: 1.15rem;
+    line-height: 20px;
+  }
+
+  .menu .search_box {
+    bottom: 50px;
+    width: 300px;
+  }
+
+  .banner .main_text {
+    font-size: 1.85rem;
   }
 
   .collection .container {
@@ -1803,6 +1838,11 @@ body.no-scroll {
   .newsletter .textwrap,
   .newsletter .search {
     border-bottom: 1px solid #222;
+  }
+
+  .essentials .subtext {
+    top: 9%;
+    font-size: 0.7rem;
   }
 
   .designer .maintext {
