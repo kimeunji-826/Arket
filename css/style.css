@@ -1534,17 +1534,9 @@ body.no-scroll {
     height: 10px;
   }
 
-  .banner img {
-    position: relative;
-
-    width: 100%;
-    /* height: auto; */
-
-    object-position: 65% center;
-  }
-
   .banner .main_text {
     font-size: 3.125rem;
+    bottom: 50px;
   }
 
   .collection .title,
@@ -1567,6 +1559,10 @@ body.no-scroll {
 
   .campaign .arket_campaign1 {
     width: 620px;
+  }
+
+  .about .thumb {
+    height: auto;
   }
 
   .about .subtext {
@@ -1593,12 +1589,14 @@ body.no-scroll {
   }
 
   .cafe .cafeimg {
-    height: auto;
+    /* height: auto; */
+    width: 100%;
   }
 
   .cafe .content {
     align-items: flex-start;
     padding-top: 50px;
+    flex-direction: column;
   }
 
   .recipe .recipe_image {
@@ -1681,9 +1679,13 @@ body.no-scroll {
     font-size: 4.25rem;
   }
 
-  .cafe .cafeimg {
-    height: 170px;
+  .editorial .bottomimg {
+    height: 640px;
   }
+
+  /* .cafe .cafeimg {
+    height: 170px;
+  } */
 
   .recipe .container {
     padding: 80px 32px 80px;
@@ -1719,5 +1721,92 @@ body.no-scroll {
     right: 32px;
     width: 60px;
     height: 60px;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (max-width: 500px) {
+  .essentials .maintext {
+    font-size: 3.4rem;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (max-width: 400px) {
+  .banner .main_text {
+    font-size: 2rem;
+  }
+
+  .collection .container {
+    padding: 50px 32px;
+  }
+
+  .collection .title,
+  .about .maintext,
+  .editorial .text,
+  .designer .maintext,
+  .cafe .text,
+  .recipe .text {
+    font-size: 1.5rem;
+  }
+
+  .collection .col {
+    padding-top: 20px;
+  }
+
+  .about .maintext {
+    padding-bottom: 10px;
+  }
+
+  .collection .text {
+    font-size: 0.85rem;
+  }
+
+  .campaign .container {
+    padding-top: 50px;
+  }
+
+  .campaign .text {
+    font-size: 1rem;
+  }
+
+  .about .maintext {
+    padding-bottom: 50px;
+  }
+
+  .about .container {
+    padding: 50px 32px;
+  }
+
+  .about .subtext {
+    font-size: 0.74rem;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    font-size: 0.85rem;
+  }
+
+  .newsletter .textwrap,
+  .newsletter .search {
+    border-bottom: 1px solid #222;
+  }
+
+  .designer .maintext {
+    padding-bottom: 15px;
+  }
+
+  .designer .nametext {
+    font-size: 0.75rem;
+  }
+
+  .essentials .maintext {
+    font-size: 2.5rem;
+  }
+
+  .editorial .next,
+  .cafe .next,
+  .recipe .next {
+    font-size: 0.8rem;
   }
 }
