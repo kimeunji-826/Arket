@@ -1729,10 +1729,23 @@ body.no-scroll {
   .essentials .maintext {
     font-size: 3.4rem;
   }
+
+  .footer_area .sns {
+    display: none;
+  }
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media (max-width: 400px) {
+  .header_area .logo {
+    width: 75px;
+  }
+
+  .header_area .menu_btn {
+    width: 24px;
+    height: 8px;
+  }
+
   .banner .main_text {
     font-size: 2rem;
   }
@@ -1808,5 +1821,17 @@ body.no-scroll {
   .cafe .next,
   .recipe .next {
     font-size: 0.8rem;
+  }
+
+  .recipe .recipe_image {
+    width: 140px;
+  }
+
+  .recipe .recipe_number {
+    font-size: 0.8rem;
+  }
+
+  .recipe .recipe_content h2 {
+    font-size: 1.4rem;
   }
 }
